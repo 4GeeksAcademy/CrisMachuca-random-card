@@ -14,14 +14,58 @@
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
+      <div class="container-fluid text-center bg-dark shadow">
+        <h1 class="text-bg-dark p-4">Random Cards Generator</h1>
+      </div>
+
+      <div
+        class="container d-flex-column justify-content-center align-items-center green-background p-3"
+      >
+        <div
+          id="card"
+          class="container card d-flex justify-content-between align-items-center bg-light shadow-lg mt-4 tarjeta"
+          style="height: 450px; width: 300px"
+        >
+          <div id="suit1" class="suit align-self-start"></div>
+          <div id="number"></div>
+          <div id="suit2" class="suit align-self-end"></div>
+        </div>
+        <div
+          class="container d-flex justify-content-center align-items-center mt-4"
+        >
+          <button
+            id="new-card-button"
+            class="btn btn-lg btn-light btn-outline-dark"
+          >
+            New Card
+          </button>
+        </div>
+        <div
+          class="container d-flex justify-content-center align-items-center mt-4 mb-5 p-3 bg-dark rounded"
+        >
+          <div class="d-flex flex-column flex-md-row align-items-center">
+            <h2 class="me-md-3 mb-md-0">Want to change card size?</h2>
+            <input
+              type="number"
+              id="widthInput"
+              placeholder="Width"
+              value="300"
+            />
+            <input
+              type="number"
+              id="heightInput"
+              placeholder="Height"
+              value="450"
+            />
+            <button id="changeSizeButton" class="btn btn-success ms-3 me-3">
+              Change Size
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="fixed-bottom p-4 bg-dark" style="color: white;">
+        Made with ❤️ by Cris Machuca for
         <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
       </div>
     </div>
